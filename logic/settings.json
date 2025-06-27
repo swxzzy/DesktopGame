@@ -1,0 +1,10 @@
+{
+    "volume_music": 50,
+    "volume_effects": 50,
+    "fps": 60,
+    "fullscreen": false,
+    "resolution": {
+        "width": 1280,
+        "height": 720
+    }
+}

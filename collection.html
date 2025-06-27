@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Коллекция</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showCard(id) {
+            const cards = document.querySelectorAll('.card-image');
+            cards.forEach(card => card.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Коллекция</h1>
+        <div class="buttons">
+            <button class="btn" onclick="showCard('card1')">Человек-паук</button>
+            <button class="btn" onclick="showCard('card2')">Черепашки-ниндзя</button>
+        </div>
+        <div id="card1" class="card-image" style="display:none;">
+            <img src="assets/collection/card1.png" alt="Человек-паук" style="max-width:100%;">
+        </div>
+        <div id="card2" class="card-image" style="display:none;">
+            <img src="assets/collection/card2.png" alt="Черепашки-ниндзя" style="max-width:100%;">
+        </div>
+        <a href="index.html" class="btn">
+            На главную</a>
+    </div>
+</body>
+</html>
